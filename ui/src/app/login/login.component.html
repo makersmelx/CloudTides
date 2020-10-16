@@ -44,7 +44,7 @@
       <button class="btn btn-primary"
         type="submit"
         [disabled]="!loginForm.form.valid || vo.submitting">
-        {{ this.vo.submitting ? 'Submitting...' : 'Login' }}
+        {{ (this.vo.submitting) && ('SUBMITTING'| translate:{}) || ('LOGIN'| translate:{}) }}
       </button>
     </div>
   </form>

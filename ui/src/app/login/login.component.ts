@@ -4,6 +4,7 @@ import { EMPTY, Subject } from 'rxjs';
 import { LoginService } from './login.service';
 import { catchError, switchMap, tap } from 'rxjs/operators';
 import { Router } from '@angular/router';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'cp-login',
@@ -15,7 +16,11 @@ export class LoginComponent implements OnInit, OnDestroy {
   constructor(
     public readonly loginService: LoginService,
     private readonly router: Router,
+    translate: TranslateService,
   ) {
+    // todo: should define which language to use through a global config
+    translate.use('zh-CN');
+    // translate.use('en');
   }
 
   readonly vo = {
