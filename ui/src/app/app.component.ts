@@ -1,14 +1,14 @@
 import { Component } from '@angular/core';
-import { Router } from '@angular/router';
+import { Router } from '@angular/router';
 
-import { PRODUCT_NAME } from '@tide-config/const'
+import { PRODUCT_NAME } from '@tide-config/const';
 
 import { LoginService, UserInfo } from './login/login.service';
 
 @Component({
   selector: 'tide-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+  styleUrls: ['./app.component.scss'],
 })
 export class AppComponent {
 
@@ -21,8 +21,8 @@ export class AppComponent {
 
   readonly vo = {
     title: PRODUCT_NAME,
-    user$: this.loginService.session$
-  }
+    user$: this.loginService.session$,
+  };
 
   signOut() {
     this.loginService.logout().subscribe();

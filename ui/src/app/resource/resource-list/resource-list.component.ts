@@ -3,11 +3,10 @@ import { Observable, of } from 'rxjs';
 
 import { Item, ResourceService } from '../resource.service';
 
-
 @Component({
   selector: 'tide-resource-list',
   templateUrl: './resource-list.component.html',
-  styleUrls: ['./resource-list.component.scss']
+  styleUrls: ['./resource-list.component.scss'],
 })
 export class ResourceListComponent implements OnInit {
 
@@ -19,7 +18,7 @@ export class ResourceListComponent implements OnInit {
 
   list$: Observable<Item[]> = of([]);
 
-  add () {
+  add() {
     this.resourceService.addItem({
       name: '',
       description: '',

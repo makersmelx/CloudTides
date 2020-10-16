@@ -22,7 +22,7 @@ export class LoginService {
     return this.http.post<UserInfo>('/api/session', { username, password }).pipe(
       tap(userInfo => {
         this.session$.next(userInfo);
-      })
+      }),
     );
   }
 
@@ -30,7 +30,7 @@ export class LoginService {
     return this.http.get<UserInfo>('/api/session').pipe(
       tap(userInfo => {
         this.session$.next(userInfo);
-      })
+      }),
     );
   }
 
@@ -38,7 +38,7 @@ export class LoginService {
     return this.http.post('/api/session', {}).pipe(
       tap(() => {
         this.document.location.href = '/login';
-      })
+      }),
     );
   }
 
