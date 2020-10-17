@@ -4,6 +4,17 @@
     autocomplete="off"
     (ngSubmit)="this.onSubmit(this.vo.model)">
 
+    <clr-select-container>
+      <select
+        clrSelect
+        #langSelect
+        [value]="this.vo.language"
+        (change)="this.changeLanguage(langSelect.value)">
+        <option value="en">English</option>
+        <option value="zh-CN">简体中文</option>
+      </select>
+    </clr-select-container>
+
     <label class="title">
       {{ "LOGIN.LOGIN_TITLE" | translate:{} }}
     </label>
@@ -19,7 +30,7 @@
         autocorrect="off"
         autocapitalize="none"
         spellcheck="false"
-        required>
+        required />
 
       <input class="password"
         placeholder="Passowrd"
@@ -27,7 +38,7 @@
         [(ngModel)]="this.vo.model.password"
         name="password"
         autocomplete="new-password"
-        required>
+        required />
 
       <clr-alert clrAlertType="danger"
         [clrAlertClosable]="false"

@@ -5,6 +5,7 @@ import { LoginService } from './login.service';
 import { catchError, switchMap, tap } from 'rxjs/operators';
 import { Router } from '@angular/router';
 import { TranslateService } from '@ngx-translate/core';
+import { I18nService } from '../config/i18n';
 
 @Component({
   selector: 'cp-login',
@@ -16,7 +17,8 @@ export class LoginComponent implements OnInit, OnDestroy {
   constructor(
     public readonly loginService: LoginService,
     private readonly router: Router,
-    translate: TranslateService,
+    public readonly translate: TranslateService,
+    public readonly i18nService: I18nService,
   ) {}
 
   readonly vo = {
@@ -28,6 +30,7 @@ export class LoginComponent implements OnInit, OnDestroy {
 
     submitting: false,
     loginError: '',
+    language: this.i18nService.getLanguage(),
 
   };
 
@@ -61,6 +64,10 @@ export class LoginComponent implements OnInit, OnDestroy {
       this.router.navigate(['/']);
     })
   ;
+
+  changeLanguage(value: string) {
+    this.i18nService.setLanguage(value);
+  }
 
   onSubmit({ username = '', password = '' }: Credential) {
     this.submit$.next({ username, password });

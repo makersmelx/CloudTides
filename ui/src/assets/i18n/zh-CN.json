@@ -3,5 +3,8 @@
     "SUBMITTING": "正在登录...",
     "LOGIN": "登录",
     "LOGIN_TITLE": "Cloudtides 云汐"
+  },
+  "HOME": {
+    "RESOURCE": "资源"
   }
 }

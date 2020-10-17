@@ -18,17 +18,19 @@ export class AppComponent {
     private readonly loginService: LoginService,
     private readonly router: Router,
     translate: TranslateService,
-    i18nService: I18nService,
-  ) {
-    translate.setDefaultLang('en');
-    const language = i18nService.getLanguage();
-    translate.use(language);
-  }
+    public readonly i18nService: I18nService,
+  ) {}
 
   readonly vo = {
     title: PRODUCT_NAME,
     user$: this.loginService.session$,
+    language: this.i18nService.getLanguage(),
   };
+
+  // todo: fix duplicate code here both in home page and login page (maybe also in register page)
+  changeLanguage(value: string) {
+    this.i18nService.setLanguage(value);
+  }
 
   signOut() {
     this.loginService.logout().subscribe();

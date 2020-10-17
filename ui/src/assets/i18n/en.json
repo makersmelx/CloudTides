@@ -3,5 +3,8 @@
     "SUBMITTING": "Submitting...",
     "LOGIN": "Login",
     "LOGIN_TITLE": "Cloudtides"
+  },
+  "HOME": {
+    "RESOURCE": "Resource"
   }
 }
