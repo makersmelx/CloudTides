@@ -17,11 +17,7 @@ export class LoginComponent implements OnInit, OnDestroy {
     public readonly loginService: LoginService,
     private readonly router: Router,
     translate: TranslateService,
-  ) {
-    // todo: should define which language to use through a global config
-    translate.use('zh-CN');
-    // translate.use('en');
-  }
+  ) {}
 
   readonly vo = {
 
