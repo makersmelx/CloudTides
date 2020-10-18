@@ -30,8 +30,6 @@ export class LoginComponent implements OnInit, OnDestroy {
 
     submitting: false,
     loginError: '',
-    language: this.i18nService.getLanguage(),
-
   };
 
   private readonly submit$ = new Subject<Credential>();
@@ -64,10 +62,6 @@ export class LoginComponent implements OnInit, OnDestroy {
       this.router.navigate(['/']);
     })
   ;
-
-  changeLanguage(value: string) {
-    this.i18nService.setLanguage(value);
-  }
 
   onSubmit({ username = '', password = '' }: Credential) {
     this.submit$.next({ username, password });

@@ -24,13 +24,7 @@ export class AppComponent {
   readonly vo = {
     title: PRODUCT_NAME,
     user$: this.loginService.session$,
-    language: this.i18nService.getLanguage(),
   };
-
-  // todo: fix duplicate code here both in home page and login page (maybe also in register page)
-  changeLanguage(value: string) {
-    this.i18nService.setLanguage(value);
-  }
 
   signOut() {
     this.loginService.logout().subscribe();
