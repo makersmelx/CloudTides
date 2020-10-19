@@ -2,9 +2,20 @@
   "LOGIN": {
     "SUBMITTING": "正在登录...",
     "LOGIN": "登录",
-    "LOGIN_TITLE": "Cloudtides 云汐"
+    "LOGIN_TITLE": "Cloudtides 云汐",
+    "EMAIL": "邮箱",
+    "PASSWORD": "密码"
   },
   "HOME": {
-    "RESOURCE": "资源"
+    "RESOURCE": {
+      "RESOURCE": "资源",
+      "ADD_RESOURCE": "添加资源"
+    },
+    "PRODUCT_NAME": "云汐",
+    "DASHBOARD": "概要",
+    "TEMPLATE": "模板",
+    "POLICY": "策略",
+    "PROFILE": "个人信息",
+    "LOGOUT": "登出"
   }
 }

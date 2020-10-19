@@ -2,9 +2,20 @@
   "LOGIN": {
     "SUBMITTING": "Submitting...",
     "LOGIN": "Login",
-    "LOGIN_TITLE": "Cloudtides"
+    "LOGIN_TITLE": "Cloudtides",
+    "EMAIL": "Email",
+    "PASSWORD": "Password"
   },
   "HOME": {
-    "RESOURCE": "Resource"
+    "RESOURCE": {
+      "RESOURCE": "Resource",
+      "ADD_RESOURCE": "Add Resource"
+    },
+    "PRODUCT_NAME": "Cloudtides",
+    "DASHBOARD": "Dashboard",
+    "TEMPLATE": "Template",
+    "POLICY": "Policy",
+    "PROFILE": "Profile",
+    "LOGOUT": "Log out"
   }
 }
