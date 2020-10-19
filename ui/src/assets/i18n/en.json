@@ -9,12 +9,85 @@
   "HOME": {
     "RESOURCE": {
       "RESOURCE": "Resource",
-      "ADD_RESOURCE": "Add Resource"
+      "ADD_RESOURCE": "Add Resource",
+      "CARD":{
+        "INFO": {
+          "CPU": "CPU",
+          "MEMORY": "Memory",
+          "DISK": "Disk"
+        },
+        "DETAIL":{
+          "CPU": "CPU",
+          "MEMORY": "Memory",
+          "DISK": "Disk"
+        }
+      },
+      "DIALOG": {
+        "ADD_RESOURCE": "Add Resource",
+        "NAME": "Name",
+        "REQUIRED": "Required",
+        "DATACENTER": "Datacenter",
+        "CLUSTER": "Cluster",
+        "USERNAME": "Username",
+        "PASSWORD": "Password",
+        "CANCEL": "Cancel",
+        "SAVE": "Save",
+        "RESOURCE_NAME": "Resource Name",
+        "DATACENTER_NAME":"Datacenter Name",
+        "CLUSTER_NAME":"Cluster Name"
+      }
+    },
+    "POLICY": {
+      "POLICY": "Policy",
+      "CONTRIBUTION_POLICY": "Contribution Policy",
+      "ADD_POLICY": "Add Policy",
+      "DATAGRID": {
+        "CRID": "CRID",
+        "TEMPLATE": "Template",
+        "START_CONDITIONS": "Start Conditions",
+        "STOP_CONDITIONS": "Stop Conditions",
+        "EDIT": "Edit",
+        "DELETE": "Delete",
+        "OF": "of",
+        "ITEM": "items"
+      },
+      "DIALOG": {
+        "CREATE_POLICY": "Create Policy",
+        "TEMPLATE": "Template",
+        "START_CONDITION": "Start Condition",
+        "STOP_CONDITION": "Stop Condition",
+        "CPU": "CPU",
+        "MEMORY": "Memory",
+        "DISK": "Disk",
+        "CANCEL": "Cancel",
+        "SAVE": "Save",
+        "SELECT_START": "Select the percentage when to start",
+        "SELECT_STOP": "Select the percentage when to stop",
+        "REQUIRED": "Required"
+      }
+    },
+    "DASHBOARD": {
+      "DASHBOARD": "Dashboard",
+      "HOME_COMPONENT":{
+        "CPU%": "CPU%"
+      }
+    },
+    "TEMPLATE": {
+      "TEMPLATE": "Template",
+      "ADD_TEMPLATE": "Add Template",
+      "CARD":{
+        "NAME": "Name",
+        "VERSION": "Version",
+        "DATE": "Date",
+        "URL": "URL",
+        "CPU": "CPU",
+        "MEMORY": "Memory",
+        "DISK": "Disk",
+        "EDIT": "Edit",
+        "DELETE": "Delete"
+      }
     },
     "PRODUCT_NAME": "Cloudtides",
-    "DASHBOARD": "Dashboard",
-    "TEMPLATE": "Template",
-    "POLICY": "Policy",
     "PROFILE": "Profile",
     "LOGOUT": "Log out"
   }

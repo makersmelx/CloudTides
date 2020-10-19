@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Observable, of } from 'rxjs';
 
 import { Item, PolicyService } from '../policy.service';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'policy-policy-datagrid',
@@ -12,6 +13,7 @@ export class PolicyDatagridComponent implements OnInit {
 
   constructor(
     private policyService: PolicyService,
+    public readonly translate: TranslateService
   ) { }
 
   readonly vo = {

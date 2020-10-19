@@ -2,6 +2,7 @@ import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 import { FormBuilder, Validators, FormGroup } from '@angular/forms';
 
 import { ItemPayload } from '../resource.service';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'tide-resource-dialog',
@@ -12,6 +13,7 @@ export class ResourceDialogComponent implements OnInit {
 
   constructor(
     private readonly fb: FormBuilder,
+    public readonly translate: TranslateService,
   ) {
     this.resourceForm = this.fb.group({
       name: [ '', Validators.required ],
