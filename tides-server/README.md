@@ -12,9 +12,14 @@ make gen
 
 will check your OpenAPI specifications and then generate corresponding code.
 
+Generate API doc:
+```
+swagger serve swagger.yml
+```
+
 ### Gorm
 
-The server uses [gorm](https://github.com/jinzhu/gorm) to map Go structs to database schemas and interact with [Postgresql](https://www.postgresql.org/). The doc can be found [here](https://gorm.io/docs/).
+The server uses [gorm](https://github.com/go-gorm/gorm) to map Go structs to database schemas and interact with [PostgreSQL](https://www.postgresql.org/). The doc can be found [here](https://gorm.io/docs/).
 
 ### Development
 
